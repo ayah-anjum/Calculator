@@ -11,6 +11,11 @@ function clearDisplay() {
     display.innerText = '';
 }
 
+function backspace() {
+    currentExpression = currentExpression.slice(0, -1);
+    display.innerText = currentExpression;
+}
+
 function calculate() {
     try {
         let result = eval(currentExpression);
