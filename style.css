@@ -56,16 +56,16 @@ body {
     background-color: #c0c0c0;
 }
 
-.button:nth-child(4n) { /* Operators */
+.button:nth-child(4n), .operator {
     background-color: #f0ad4e;
     color: #fff;
 }
 
-.button:nth-child(4n):hover {
+.button:nth-child(4n):hover, .operator:hover {
     background-color: #e09d3e;
 }
 
-.button:nth-child(4n):active {
+.button:nth-child(4n):active, .operator:active {
     background-color: #d08d2e;
 }
 
@@ -84,7 +84,7 @@ body {
 }
 
 .zero {
-    grid-column: span 2;
+    grid-column: span 1;
 }
 
 .button:first-child { /* Clear button */
